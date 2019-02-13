@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mpage.Master.cs" Inherits="cms_db.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CMS</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Stylesheet/style.scss" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Stylesheet/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+    <form id="form1" runat="server">
+        <nav>
+            <div class="navigation">
+                <div class="nav-left">
+                    <asp:Image ID="ImageLogo" runat="server" />
+                </div>
+                <div class="nav-right">
+                    <div class="header-title">
+                        <asp:Label ID="LabelTitle" runat="server" Text="Label"></asp:Label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Label ID="LabelMessage" runat="server" Text="Label"></asp:Label>
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+
+
+
+        <footer>
+            <div class="description">
+                <asp:Label ID="Labeldesc" runat="server" Text="Label"></asp:Label>
+            </div>
+        </footer>
+    </form>
+        </div>
+</body>
+</html>
